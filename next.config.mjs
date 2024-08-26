@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const repo = "test";
+const assetPrefix = `/${repo}/`;
+const basePath = `/${repo}`;
+const nextConfig = {
+    basePath,
+    assetPrefix,
+    output: "export",
+};
 
 export default nextConfig;
